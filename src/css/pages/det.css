@@ -1,0 +1,40 @@
+.app.det{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(24, 21, 33);
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.1s ease;
+}
+.app.det:hover{transform: scale(1.01);}
+.app.det .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.1s ease;
+}
+.app.det .col:hover{transform: scale(1.01);}
+.app.det .col .item{
+    /* padding: 5px; */
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.app.det .col .item:hover{transform: scale(1.03);}
+.app.det .col .item.active{
+    transition: transform 0.1s ease;
+    background-color: rgb(40, 36, 55);
+}
+.app.det .col .item.active:hover{transform: scale(1.01);}
+.app.det .col .item h2{font-size: 22px;}
+.app.det .col .item h3{font-size: 18px;}

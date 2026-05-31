@@ -1,0 +1,81 @@
+.app.fcast {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 85%;
+    /* text-align: center; */
+}
+.app.fcast .weekDays{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: rgb(24, 21, 33);
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    transition: transform 0.1s ease;
+}
+.app.fcast .weekDays:hover{
+    transform: scale(1.01);
+}
+.app.fcast .weekDays .item{
+    padding: 10px 20px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+.app.fcast .weekDays .item:hover{transform: scale(1.02);background-color: rgb(29, 26, 40);}
+.app.fcast .weekDays .item.active{
+    background-color: rgb(40, 36, 55);
+    cursor: default;
+    transition: transform 0.1s ease;
+}
+.app.fcast .weekDays .item.active:hover{
+    transform: scale(1.01);
+}
+
+
+.app.fcast .dayHours{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    background-color: rgb(24, 21, 33);
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    transition: transform 0.1s ease;
+    margin-top: 25px;
+}
+.app.fcast .dayHours:hover{
+    transform: scale(1.01);
+}
+.app.fcast .dayHours .item{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: default;
+}
+.app.fcast .dayHours .item:hover{transform: scale(1.02);background-color: rgb(29, 26, 40);}
+.app.fcast .dayHours .item.active{
+    background-color: rgb(40, 36, 55);
+    cursor: default;
+    transition: transform 0.1s ease;
+}
+.app.fcast .dayHours .item.active:hover{transform: scale(1.01);}
+
+.app.fcast .dayHours .item p{font-size: 18px;}
+.app.fcast .dayHours .item i{font-size: 42px;}
+.app.fcast .dayHours .item h3{font-size: 20px;}
+.app.fcast .dayHours .item h2{font-size: 24px;}

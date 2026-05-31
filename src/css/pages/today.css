@@ -1,0 +1,30 @@
+.app.today {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    transition: transform 0.1s ease;
+}
+.app.today:hover{transform: scale(1.03);}
+.app.today h1{
+    font-size: 88px;
+    transition: transform 0.3s ease;
+}
+.app.today h1:hover{transform: scale(1.03);}
+.app.today h2{
+    font-size: 42px;
+    transition: transform 0.3s ease;
+}
+.app.today h2:hover{transform: scale(1.03);}
+.app.today h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+.app.today h3:hover{transform: scale(1.03);}
+.app.today p{
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+.app.today p:hover{transform: scale(1.03);}

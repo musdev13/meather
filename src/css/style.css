@@ -1,0 +1,83 @@
+@import './fonts.css';
+@import './pages/today.css';
+@import './pages/fcast.css';
+@import './pages/det.css';
+
+*{
+    font-family: 'JetBrainsMono';
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(13, 11, 18);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  padding: 25px;
+  transition: transform 0.3s ease;
+  transform: scale(1.01);
+  overflow: hidden;
+  width: 100%;
+}
+body:hover{transform: scale(1.0);}
+
+header {display: flex; gap: 5px; align-items: center;transition: transform 0.3s ease;}
+header:hover{transform: scale(1.02);}
+header img {height: 50px;}
+header h1 {font-size: 38px;}
+
+.bar{
+    display: flex;gap: 5px;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(24, 21, 33);
+    padding: 8px 10px;
+    border-radius: 32px;
+    gap: 25px;
+    transition: transform 0.1s ease;
+}
+.bar:hover{transform: scale(1.01);}
+.bar .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px 24px; */
+    height: 70px;
+    width: 100px;
+    border-radius: 28px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+.bar .item:hover{transform: scale(1.08);background-color: rgb(29, 26, 40);}
+.bar .item .icon{
+    font-size: 28px;
+    display: flex;
+}
+.bar .item .icon i{
+    opacity: 0;
+}
+.bar .item h3{font-size: 18px;}
+.bar .item.active {
+    background-color: rgb(40, 36, 55);
+    cursor:default;
+    transition: transform 0.1s ease;
+}
+.bar .item.active:hover{
+    transform: scale(1.03)
+}
+
+.screen-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
